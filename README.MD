@@ -1,43 +1,44 @@
-# Ensemble Intro com Scikit-Learn 🧠📊
+# Ensemble Learning com Scikit-Learn
 
-Este projeto apresenta uma introdução prática às técnicas de Ensemble Learning utilizando a biblioteca **Scikit-Learn**, com foco em **Bagging** e **AdaBoost** aplicados a problemas de classificação e regressão.
+Este projeto explora diferentes técnicas de **Ensemble Learning** usando o Scikit-Learn, aplicando-as em tarefas de **classificação** e **regressão**. Os métodos utilizados incluem:
 
+- **AdaBoost**
+- **Bagging**
+- **Stacking**
+- **Voting**
 
-## 📌 Objetivos
+## 📁 Estrutura do Projeto
 
-- Demonstrar como aplicar **AdaBoost** e **Bagging** em problemas reais.
-- Analisar desempenho dos modelos em tarefas de regressão e classificação.
-- Mostrar o processo de pré-processamento dos dados e serialização com `pickle`.
+- `datasets/`: Contém os conjuntos de dados utilizados.
+- `preprocessor_dataset_*.pkl`: Arquivos de pré-processamento dos dados.
+- Arquivos `.ipynb`: Notebooks separados por técnica e por tipo de problema (classificação ou regressão).
 
+## 📚 Técnicas Implementadas
 
-### 🔶 Regressão
+### 🔹 AdaBoost
+- `adaboost_classification.ipynb`
+- `adaboost_regression.ipynb`
 
-- **adaboost_regression.ipynb**: Predição dos custos médicos com base em atributos como idade, sexo, filhos, tabagismo e região.
-- **bagging_regression.ipynb**: Comparação com regressão usando Bagging Regressor.
+### 🔹 Bagging
+- `bagging_classification.ipynb`
+- `bagging_regression.ipynb`
 
-### 🔷 Classificação
+### 🔹 Stacking
+- `stacking_classification.ipynb`
+- `stacking_regression.ipynb`
 
-- **adaboost_classification.ipynb**: Classificação binária (ex: leads ou fumante/não-fumante).
-- **bagging_classification.ipynb**: Classificação com Bagging aplicado ao mesmo conjunto de dados.
+### 🔹 Voting
+- `voting_classification.ipynb`
+- `voting_regression.ipynb`
 
-## 📊 Conjunto de Dados
+## ⚙️ Tecnologias Utilizadas
 
-Os dados utilizados foram previamente limpos e salvos nas versões `*_cleaned.csv`. O
-
-## 🛠️ Tecnologias
-
-- Python 3.x
+- Python 3
 - Scikit-Learn
 - Pandas
-- NumPy
-- Matplotlib / Seaborn (opcional para visualizações)
-- Pickle
-- VS Code + Jupyter Notebooks
+- Numpy
+- Matplotlib / Seaborn
 
-## 🚀 Como Executar
+## 📌 Objetivo
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seuusuario/ensemble-intro-sklearn.git
-   cd ensemble-intro-sklearn
-
+Demonstrar o uso prático das principais abordagens de **Ensemble Learning**, comparando seus desempenhos em diferentes contextos
